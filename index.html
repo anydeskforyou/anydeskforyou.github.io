@@ -1,547 +1,397 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sarkari Adda - Latest Govt Jobs, Results, Admit Card</title>
-  <meta name="description" content="Sarkari Adda - सरकारी नौकरी, रिजल्ट, एडमिट कार्ड, आंसर की और सरकारी योजनाओं की नवीनतम जानकारी।">
+    <title>Sarkari Adda - Latest Government Jobs, Results, Admit Card & Answer Key</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f4f7;
-      color: #222;
-      line-height: 1.6;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f5f9;
+            color: #14213d;
+        }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+        header {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 18px 10px;
+        }
 
-    /* Header */
-    header {
-      background: #14213d;
-      color: white;
-      padding: 18px 15px;
-      text-align: center;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
 
-    .logo {
-      font-size: 30px;
-      font-weight: bold;
-    }
+        header p {
+            margin: 5px 0 0;
+        }
 
-    .tagline {
-      font-size: 14px;
-      margin-top: 4px;
-      opacity: 0.9;
-    }
+        nav {
+            background: #ffae00;
+            text-align: center;
+            padding: 12px;
+        }
 
-    /* Navigation */
-    nav {
-      background: #fca311;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+        nav a {
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+        }
 
-    nav a {
-      padding: 12px 14px;
-      font-weight: bold;
-      font-size: 14px;
-      color: #111;
-    }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
 
-    nav a:hover {
-      background: #111;
-      color: white;
-    }
+        .notice {
+            background: #fff3cd;
+            border-left: 6px solid #ffae00;
+            padding: 15px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
 
-    /* Search */
-    .search-box {
-      max-width: 700px;
-      margin: 20px auto;
-      padding: 0 15px;
-      display: flex;
-      gap: 8px;
-    }
+        /* TOP BOXES */
+        .menu-boxes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
 
-    .search-box input {
-      flex: 1;
-      padding: 13px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
-    }
+        .menu-box {
+            background: white;
+            padding: 25px 10px;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #14213d;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            transition: 0.2s;
+        }
 
-    .search-box button {
-      padding: 13px 20px;
-      border: none;
-      border-radius: 6px;
-      background: #14213d;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
+        .menu-box:hover {
+            transform: translateY(-3px);
+        }
 
-    /* Notice */
-    .notice {
-      max-width: 1100px;
-      margin: 15px auto;
-      padding: 12px 15px;
-      background: #fff3cd;
-      border-left: 5px solid #fca311;
-      font-weight: bold;
-    }
+        .menu-box .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
 
-    /* Container */
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 10px 15px 40px;
-    }
+        .section-title {
+            background: #14213d;
+            color: white;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 8px 8px 0 0;
+        }
 
-    /* Category Cards */
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      margin: 20px 0;
-    }
+        .job-list {
+            background: white;
+            border-radius: 0 0 8px 8px;
+        }
 
-    .category {
-      background: white;
-      padding: 20px 10px;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      font-weight: bold;
-    }
+        .job-item {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
 
-    .category span {
-      display: block;
-      font-size: 28px;
-      margin-bottom: 5px;
-    }
+        .job-item:last-child {
+            border-bottom: none;
+        }
 
-    /* Sections */
-    .section-title {
-      background: #14213d;
-      color: white;
-      padding: 12px 15px;
-      margin-top: 25px;
-      border-radius: 6px 6px 0 0;
-      font-size: 20px;
-    }
+        .job-item h3 {
+            margin-top: 0;
+        }
 
-    .job-list {
-      background: white;
-      border-radius: 0 0 6px 6px;
-      overflow: hidden;
-    }
+        .buttons {
+            margin-top: 12px;
+        }
 
-    .job-item {
-      padding: 15px;
-      border-bottom: 1px solid #ddd;
-    }
+        .btn {
+            display: inline-block;
+            background: #14213d;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 8px;
+            margin-bottom: 5px;
+        }
 
-    .job-item:last-child {
-      border-bottom: none;
-    }
+        .btn.green {
+            background: #159447;
+        }
 
-    .job-item h3 {
-      font-size: 17px;
-      margin-bottom: 5px;
-      color: #14213d;
-    }
+        .btn.red {
+            background: #b22226;
+        }
 
-    .job-item p {
-      font-size: 14px;
-      color: #555;
-    }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
 
-    .buttons {
-      margin-top: 10px;
-    }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
 
-    .btn {
-      display: inline-block;
-      padding: 8px 13px;
-      margin-right: 5px;
-      margin-top: 5px;
-      border-radius: 5px;
-      background: #14213d;
-      color: white;
-      font-size: 13px;
-      font-weight: bold;
-    }
+        .card-title {
+            background: #14213d;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+        }
 
-    .btn:hover {
-      opacity: 0.85;
-    }
+        .card-content {
+            padding: 20px;
+        }
 
-    .result .btn {
-      background: #16803c;
-    }
+        footer {
+            margin-top: 30px;
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    .admit .btn {
-      background: #9b2226;
-    }
+        @media (max-width: 700px) {
 
-    /* Two columns */
-    .columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+            header h1 {
+                font-size: 25px;
+            }
 
-    /* Footer */
-    footer {
-      background: #14213d;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 30px;
-    }
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
 
-    footer a {
-      color: #fca311;
-      margin: 0 7px;
-    }
+            .menu-boxes {
+                grid-template-columns: 1fr 1fr;
+            }
 
-    .copyright {
-      margin-top: 12px;
-      font-size: 13px;
-      opacity: 0.8;
-    }
-
-    /* Mobile */
-    @media (max-width: 700px) {
-
-      .logo {
-        font-size: 26px;
-      }
-
-      nav a {
-        width: 50%;
-        text-align: center;
-        padding: 10px 5px;
-      }
-
-      .categories {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .columns {
-        grid-template-columns: 1fr;
-      }
-
-      .search-box {
-        flex-direction: column;
-      }
-
-      .search-box button {
-        width: 100%;
-      }
-    }
-  </style>
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">🇮🇳 Sarkari Adda</div>
-    <div class="tagline">
-      सरकारी नौकरी • रिजल्ट • एडमिट कार्ड • आंसर की
-    </div>
-  </header>
+<header>
+    <h1>🇮🇳 Sarkari Adda</h1>
+    <p>सरकारी नौकरी • रिजल्ट • एडमिट कार्ड • आंसर की</p>
+</header>
 
-  <!-- NAVIGATION -->
-  <nav>
+<nav>
     <a href="index.html">Home</a>
-<a href="jobs.html">Latest Jobs</a>
-<a href="results.html">Results</a>
-<a href="admit-card.html">Admit Card</a>
-<a href="answer-key.html">Answer Key</a>
-  </nav>
+    <a href="jobs.html">Latest Jobs</a>
+    <a href="results.html">Results</a>
+    <a href="admit-card.html">Admit Card</a>
+    <a href="answer-key.html">Answer Key</a>
+</nav>
 
-  <!-- SEARCH -->
-  <div class="search-box">
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="जैसे SSC GD, Railway, Police..."
-      onkeyup="searchJobs()"
-    >
-    <button onclick="searchJobs()">Search</button>
-  </div>
+<div class="container">
 
-  <!-- NOTICE -->
-  <div class="notice">
-    📢 महत्वपूर्ण सूचना: सभी भर्ती की जानकारी के लिए संबंधित विभाग की Official Notification जरूर देखें।
-  </div>
+    <div class="notice">
+        📢 महत्वपूर्ण सूचना: सभी भर्ती की जानकारी के लिए संबंधित विभाग की Official Notification जरूर देखें।
+    </div>
 
-  <main class="container">
+    <!-- TOP FOUR BOXES -->
+    <div class="menu-boxes">
 
-    <!-- CATEGORIES -->
-    <div class="categories">
+        <a class="menu-box" href="jobs.html">
+            <div class="icon">💼</div>
+            Latest Jobs
+        </a>
 
-      <a href="#jobs" class="category">
-        <span>💼</span>
-        Latest Jobs
-      </a>
+        <a class="menu-box" href="results.html">
+            <div class="icon">📊</div>
+            Results
+        </a>
 
-      <a href="#results" class="category">
-        <span>📊</span>
-        Results
-      </a>
+        <a class="menu-box" href="admit-card.html">
+            <div class="icon">🪪</div>
+            Admit Card
+        </a>
 
-      <a href="#admit" class="category">
-        <span>🎫</span>
-        Admit Card
-      </a>
-
-      <a href="#answer" class="category">
-        <span>📝</span>
-        Answer Key
-      </a>
+        <a class="menu-box" href="answer-key.html">
+            <div class="icon">📝</div>
+            Answer Key
+        </a>
 
     </div>
 
     <!-- LATEST JOBS -->
-    <section id="jobs">
+    <h2 class="section-title">🔥 Latest Government Jobs</h2>
 
-      <div class="section-title">
-        🔥 Latest Government Jobs
-      </div>
-
-      <div class="job-list" id="jobList">
+    <div class="job-list">
 
         <article class="job-item">
-          <h3>SSC Recruitment 2026</h3>
-          <p>
-            कर्मचारी चयन आयोग की नवीनतम भर्ती की जानकारी।
-          </p>
+            <h3>SSC Recruitment 2026</h3>
+            <p>कर्मचारी चयन आयोग की नवीनतम भर्ती की जानकारी।</p>
 
-          <div class="buttons">
-            <a href="#" class="btn">View Details</a>
-            <a href="#" class="btn">Official Website</a>
-          </div>
+            <div class="buttons">
+                <a class="btn" href="jobs.html">View Details</a>
+                <a class="btn" href="https://ssc.gov.in/" target="_blank">Official Website</a>
+            </div>
         </article>
 
         <article class="job-item">
-          <h3>Railway Recruitment 2026</h3>
-          <p>
-            रेलवे भर्ती से संबंधित नवीनतम अपडेट यहां देखें।
-          </p>
+            <h3>Railway Recruitment 2026</h3>
+            <p>रेलवे भर्ती से संबंधित नवीनतम अपडेट यहां देखें।</p>
 
-          <div class="buttons">
-            <a href="#" class="btn">View Details</a>
-            <a href="#" class="btn">Official Website</a>
-          </div>
+            <div class="buttons">
+                <a class="btn" href="jobs.html">View Details</a>
+                <a class="btn" href="https://www.rrbcdg.gov.in/" target="_blank">Official Website</a>
+            </div>
         </article>
 
         <article class="job-item">
-          <h3>Police Recruitment 2026</h3>
-          <p>
-            पुलिस विभाग की नई सरकारी भर्ती की जानकारी।
-          </p>
+            <h3>Police Recruitment 2026</h3>
+            <p>पुलिस विभाग की नई सरकारी भर्ती की जानकारी।</p>
 
-          <div class="buttons">
-            <a href="#" class="btn">View Details</a>
-            <a href="#" class="btn">Official Website</a>
-          </div>
+            <div class="buttons">
+                <a class="btn" href="jobs.html">View Details</a>
+                <a class="btn" href="#" >Official Website</a>
+            </div>
         </article>
-
-      </div>
-    </section>
-
-    <!-- RESULTS + ADMIT -->
-    <div class="columns">
-
-      <!-- RESULTS -->
-      <section id="results">
-
-        <div class="section-title">
-          📊 Latest Results
-        </div>
-
-        <div class="job-list result">
-
-          <article class="job-item">
-            <h3>SSC Result 2026</h3>
-            <p>Latest SSC examination result update.</p>
-
-            <div class="buttons">
-              <a href="https://ssc.gov.in/" target="_blank" class="btn">Check Result</a>
-            </div>
-          </article>
-
-          <article class="job-item">
-            <h3>Railway Result 2026</h3>
-            <p>Railway examination result update.</p>
-
-            <div class="buttons">
-              <a href="https://www.rrbcdg.gov.in/" target="_blank" class="btn">Check Result</a>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- ADMIT CARD -->
-      <section id="admit" class="admit">
-
-        <div class="section-title">
-          🎫 Latest Admit Card
-        </div>
-
-        <div class="job-list">
-
-          <article class="job-item">
-            <h3>SSC Admit Card 2026</h3>
-            <p>Download your examination admit card.</p>
-
-            <div class="buttons">
-              <a href="#" class="btn">Download</a>
-            </div>
-          </article>
-
-          <article class="job-item">
-            <h3>Railway Admit Card 2026</h3>
-            <p>Latest railway exam admit card update.</p>
-
-            <div class="buttons">
-              <a href="#" class="btn">Download</a>
-            </div>
-          </article>
-
-        </div>
-      </section>
 
     </div>
+
+    <!-- RESULTS + ADMIT CARD -->
+    <div class="two-column">
+
+        <div class="card">
+
+            <div class="card-title">
+                📊 Latest Results
+            </div>
+
+            <div class="card-content">
+
+                <div class="job-item">
+                    <h3>SSC Result 2026</h3>
+                    <p>Latest SSC examination result update.</p>
+
+                    <a class="btn green" href="results.html">
+                        Check Result
+                    </a>
+                </div>
+
+                <div class="job-item">
+                    <h3>Railway Result 2026</h3>
+                    <p>Railway examination result update.</p>
+
+                    <a class="btn green" href="results.html">
+                        Check Result
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-title">
+                🪪 Latest Admit Card
+            </div>
+
+            <div class="card-content">
+
+                <div class="job-item">
+                    <h3>SSC Admit Card 2026</h3>
+                    <p>Download your examination admit card.</p>
+
+                    <a class="btn red" href="admit-card.html">
+                        Download
+                    </a>
+                </div>
+
+                <div class="job-item">
+                    <h3>Railway Admit Card 2026</h3>
+                    <p>Latest railway exam admit card update.</p>
+
+                    <a class="btn red" href="admit-card.html">
+                        Download
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- ANSWER KEY -->
-    <section id="answer">
+    <h2 class="section-title">📝 Latest Answer Key</h2>
 
-      <div class="section-title">
-        📝 Latest Answer Key
-      </div>
-
-      <div class="job-list">
+    <div class="job-list">
 
         <article class="job-item">
-          <h3>SSC Answer Key 2026</h3>
-          <p>
-            परीक्षा की नवीनतम Answer Key और संबंधित जानकारी।
-          </p>
+            <h3>SSC Answer Key 2026</h3>
+            <p>परीक्षा की नवीनतम Answer Key और संबंधित जानकारी।</p>
 
-          <div class="buttons">
-            <a href="#" class="btn">View Answer Key</a>
-          </div>
+            <a class="btn" href="answer-key.html">
+                View Answer Key
+            </a>
         </article>
 
         <article class="job-item">
-          <h3>Railway Answer Key 2026</h3>
-          <p>
-            Railway examination answer key update.
-          </p>
+            <h3>Railway Answer Key 2026</h3>
+            <p>Railway examination answer key update.</p>
 
-          <div class="buttons">
-            <a href="#" class="btn">View Answer Key</a>
-          </div>
+            <a class="btn" href="answer-key.html">
+                View Answer Key
+            </a>
         </article>
 
-      </div>
+    </div>
 
-    </section>
 
     <!-- ABOUT -->
-    <section id="about">
+    <h2 class="section-title">ℹ️ About Sarkari Adda</h2>
 
-      <div class="section-title">
-        ℹ️ About Sarkari Adda
-      </div>
-
-      <div class="job-list">
-
+    <div class="job-list">
         <div class="job-item">
-          <p>
-            Sarkari Adda एक informational platform है जहां
-            सरकारी नौकरी, परीक्षा, रिजल्ट, एडमिट कार्ड और
-            Answer Key से संबंधित जानकारी उपलब्ध कराई जाती है।
-          </p>
+            <p>
+                Sarkari Adda एक informational platform है जहां सरकारी नौकरी,
+                परीक्षा, रिजल्ट, एडमिट कार्ड और Answer Key से संबंधित जानकारी
+                उपलब्ध कराई जाती है।
+            </p>
 
-          <br>
-
-          <p>
-            किसी भी आवेदन या परीक्षा से पहले संबंधित विभाग की
-            Official Website और Official Notification जरूर जांचें।
-          </p>
+            <p>
+                किसी भी आवेदन या परीक्षा से पहले संबंधित विभाग की
+                Official Website और Official Notification जरूर जांचें।
+            </p>
         </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-
-    <div>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Contact</a>
-      <a href="#">Disclaimer</a>
     </div>
 
-    <div class="copyright">
-      © 2026 Sarkari Adda. All Rights Reserved.
-    </div>
+</div>
 
-  </footer>
+<footer>
+    <p>© 2026 Sarkari Adda | सरकारी नौकरी की जानकारी</p>
+</footer>
 
-
-  <!-- SEARCH JAVASCRIPT -->
-  <script>
-
-    function searchJobs() {
-
-      let input =
-        document.getElementById("searchInput")
-        .value
-        .toLowerCase();
-
-      let items =
-        document.querySelectorAll(".job-item");
-
-      items.forEach(function(item) {
-
-        let text =
-          item.innerText.toLowerCase();
-
-        if (text.includes(input)) {
-          item.style.display = "";
-        } else {
-          item.style.display = "none";
-        }
-
-      });
-
-    }
-
-  </script>
-
+</body>
+</html>
 </body>
 </html>
