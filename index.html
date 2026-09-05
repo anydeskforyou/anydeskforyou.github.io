@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sarkari Adda - Latest Govt Jobs, Results, Admit Card</title>
+  <meta name="description" content="Sarkari Adda - सरकारी नौकरी, रिजल्ट, एडमिट कार्ड, आंसर की और सरकारी योजनाओं की नवीनतम जानकारी।">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: #14213d;
+      color: white;
+      padding: 18px 15px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 14px;
+      margin-top: 4px;
+      opacity: 0.9;
+    }
+
+    /* Navigation */
+    nav {
+      background: #fca311;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 12px 14px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #111;
+    }
+
+    nav a:hover {
+      background: #111;
+      color: white;
+    }
+
+    /* Search */
+    .search-box {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 0 15px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .search-box button {
+      padding: 13px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #14213d;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Notice */
+    .notice {
+      max-width: 1100px;
+      margin: 15px auto;
+      padding: 12px 15px;
+      background: #fff3cd;
+      border-left: 5px solid #fca311;
+      font-weight: bold;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 10px 15px 40px;
+    }
+
+    /* Category Cards */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .category {
+      background: white;
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      font-weight: bold;
+    }
+
+    .category span {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    /* Sections */
+    .section-title {
+      background: #14213d;
+      color: white;
+      padding: 12px 15px;
+      margin-top: 25px;
+      border-radius: 6px 6px 0 0;
+      font-size: 20px;
+    }
+
+    .job-list {
+      background: white;
+      border-radius: 0 0 6px 6px;
+      overflow: hidden;
+    }
+
+    .job-item {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .job-item:last-child {
+      border-bottom: none;
+    }
+
+    .job-item h3 {
+      font-size: 17px;
+      margin-bottom: 5px;
+      color: #14213d;
+    }
+
+    .job-item p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 13px;
+      margin-right: 5px;
+      margin-top: 5px;
+      border-radius: 5px;
+      background: #14213d;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .result .btn {
+      background: #16803c;
+    }
+
+    .admit .btn {
+      background: #9b2226;
+    }
+
+    /* Two columns */
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #fca311;
+      margin: 0 7px;
+    }
+
+    .copyright {
+      margin-top: 12px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+
+      .logo {
+        font-size: 26px;
+      }
+
+      nav a {
+        width: 50%;
+        text-align: center;
+        padding: 10px 5px;
+      }
+
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .columns {
+        grid-template-columns: 1fr;
+      }
+
+      .search-box {
+        flex-direction: column;
+      }
+
+      .search-box button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🇮🇳 Sarkari Adda</div>
+    <div class="tagline">
+      सरकारी नौकरी • रिजल्ट • एडमिट कार्ड • आंसर की
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#jobs">Latest Jobs</a>
+    <a href="#results">Results</a>
+    <a href="#admit">Admit Card</a>
+    <a href="#answer">Answer Key</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="जैसे SSC GD, Railway, Police..."
+      onkeyup="searchJobs()"
+    >
+    <button onclick="searchJobs()">Search</button>
+  </div>
+
+  <!-- NOTICE -->
+  <div class="notice">
+    📢 महत्वपूर्ण सूचना: सभी भर्ती की जानकारी के लिए संबंधित विभाग की Official Notification जरूर देखें।
+  </div>
+
+  <main class="container">
+
+    <!-- CATEGORIES -->
+    <div class="categories">
+
+      <a href="#jobs" class="category">
+        <span>💼</span>
+        Latest Jobs
+      </a>
+
+      <a href="#results" class="category">
+        <span>📊</span>
+        Results
+      </a>
+
+      <a href="#admit" class="category">
+        <span>🎫</span>
+        Admit Card
+      </a>
+
+      <a href="#answer" class="category">
+        <span>📝</span>
+        Answer Key
+      </a>
+
+    </div>
+
+    <!-- LATEST JOBS -->
+    <section id="jobs">
+
+      <div class="section-title">
+        🔥 Latest Government Jobs
+      </div>
+
+      <div class="job-list" id="jobList">
+
+        <article class="job-item">
+          <h3>SSC Recruitment 2026</h3>
+          <p>
+            कर्मचारी चयन आयोग की नवीनतम भर्ती की जानकारी।
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="btn">View Details</a>
+            <a href="#" class="btn">Official Website</a>
+          </div>
+        </article>
+
+        <article class="job-item">
+          <h3>Railway Recruitment 2026</h3>
+          <p>
+            रेलवे भर्ती से संबंधित नवीनतम अपडेट यहां देखें।
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="btn">View Details</a>
+            <a href="#" class="btn">Official Website</a>
+          </div>
+        </article>
+
+        <article class="job-item">
+          <h3>Police Recruitment 2026</h3>
+          <p>
+            पुलिस विभाग की नई सरकारी भर्ती की जानकारी।
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="btn">View Details</a>
+            <a href="#" class="btn">Official Website</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RESULTS + ADMIT -->
+    <div class="columns">
+
+      <!-- RESULTS -->
+      <section id="results">
+
+        <div class="section-title">
+          📊 Latest Results
+        </div>
+
+        <div class="job-list result">
+
+          <article class="job-item">
+            <h3>SSC Result 2026</h3>
+            <p>Latest SSC examination result update.</p>
+
+            <div class="buttons">
+              <a href="#" class="btn">Check Result</a>
+            </div>
+          </article>
+
+          <article class="job-item">
+            <h3>Railway Result 2026</h3>
+            <p>Railway examination result update.</p>
+
+            <div class="buttons">
+              <a href="#" class="btn">Check Result</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ADMIT CARD -->
+      <section id="admit" class="admit">
+
+        <div class="section-title">
+          🎫 Latest Admit Card
+        </div>
+
+        <div class="job-list">
+
+          <article class="job-item">
+            <h3>SSC Admit Card 2026</h3>
+            <p>Download your examination admit card.</p>
+
+            <div class="buttons">
+              <a href="#" class="btn">Download</a>
+            </div>
+          </article>
+
+          <article class="job-item">
+            <h3>Railway Admit Card 2026</h3>
+            <p>Latest railway exam admit card update.</p>
+
+            <div class="buttons">
+              <a href="#" class="btn">Download</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ANSWER KEY -->
+    <section id="answer">
+
+      <div class="section-title">
+        📝 Latest Answer Key
+      </div>
+
+      <div class="job-list">
+
+        <article class="job-item">
+          <h3>SSC Answer Key 2026</h3>
+          <p>
+            परीक्षा की नवीनतम Answer Key और संबंधित जानकारी।
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="btn">View Answer Key</a>
+          </div>
+        </article>
+
+        <article class="job-item">
+          <h3>Railway Answer Key 2026</h3>
+          <p>
+            Railway examination answer key update.
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="btn">View Answer Key</a>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+
+      <div class="section-title">
+        ℹ️ About Sarkari Adda
+      </div>
+
+      <div class="job-list">
+
+        <div class="job-item">
+          <p>
+            Sarkari Adda एक informational platform है जहां
+            सरकारी नौकरी, परीक्षा, रिजल्ट, एडमिट कार्ड और
+            Answer Key से संबंधित जानकारी उपलब्ध कराई जाती है।
+          </p>
+
+          <br>
+
+          <p>
+            किसी भी आवेदन या परीक्षा से पहले संबंधित विभाग की
+            Official Website और Official Notification जरूर जांचें।
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+      <a href="#">Disclaimer</a>
+    </div>
+
+    <div class="copyright">
+      © 2026 Sarkari Adda. All Rights Reserved.
+    </div>
+
+  </footer>
+
+
+  <!-- SEARCH JAVASCRIPT -->
+  <script>
+
+    function searchJobs() {
+
+      let input =
+        document.getElementById("searchInput")
+        .value
+        .toLowerCase();
+
+      let items =
+        document.querySelectorAll(".job-item");
+
+      items.forEach(function(item) {
+
+        let text =
+          item.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+
+      });
+
+    }
+
+  </script>
+
+</body>
+</html>
