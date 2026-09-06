@@ -1,37 +1,108 @@
+```javascript
 const updates = {
+
     jobs: [
+
         {
-            title: "नई सरकारी नौकरी",
-            organization: "Government Department",
-            lastDate: "30 September 2026",
-            link: "#"
+            title: "UPPSC Professor & Assistant Professor Recruitment 2026",
+            organization: "Uttar Pradesh Public Service Commission",
+            lastDate: "15 September 2026",
+            link: "https://uppsc.up.nic.in/",
+            button: "Apply Online"
+        },
+
+        {
+            title: "UPPSC Miscellaneous Examination 2026 - A-2/E-1/2026",
+            organization: "Uttar Pradesh Public Service Commission",
+            lastDate: "10 September 2026",
+            link: "https://uppsc.up.nic.in/",
+            button: "Apply Online"
+        },
+
+        {
+            title: "UPPSC Miscellaneous Examination 2026 - A-3/E-1/2026",
+            organization: "Uttar Pradesh Public Service Commission",
+            lastDate: "10 September 2026",
+            link: "https://uppsc.up.nic.in/",
+            button: "Apply Online"
+        },
+
+        {
+            title: "UP Police Home Guard Enrollment 2025",
+            organization: "Uttar Pradesh Police Recruitment & Promotion Board",
+            lastDate: "PET / Admit Card Update",
+            link: "https://uppbpb.gov.in/",
+            button: "Official Website"
         }
+
     ],
 
     results: [
+
         {
-            title: "Latest Government Result",
-            organization: "Government Department",
+            title: "UPPSC Latest Results & Selection Updates",
+            organization: "Uttar Pradesh Public Service Commission",
             date: "06 September 2026",
-            link: "#"
+            link: "https://uppsc.up.nic.in/",
+            button: "Check Result"
+        },
+
+        {
+            title: "UP Police Latest Results & Updates",
+            organization: "UP Police Recruitment & Promotion Board",
+            date: "06 September 2026",
+            link: "https://uppbpb.gov.in/",
+            button: "Check Result"
         }
+
     ],
 
     admitCards: [
+
         {
-            title: "Latest Admit Card",
-            organization: "Government Department",
-            examDate: "September 2026",
-            link: "#"
+            title: "UPPSC Research Assistant (Engineering) Examination 2025",
+            organization: "Uttar Pradesh Public Service Commission",
+            examDate: "Admit Card Available",
+            link: "https://uppsc.up.nic.in/",
+            button: "Download Admit Card"
+        },
+
+        {
+            title: "UPPSC Lecturer U.P. Technical Education Examination 2025",
+            organization: "Uttar Pradesh Public Service Commission",
+            examDate: "Admit Card Available",
+            link: "https://uppsc.up.nic.in/",
+            button: "Download Admit Card"
+        },
+
+        {
+            title: "UP Police Home Guard PET 2025",
+            organization: "UP Police Recruitment & Promotion Board",
+            examDate: "PET Admit Card Available",
+            link: "https://uppbpb.gov.in/",
+            button: "Download Admit Card"
         }
+
     ],
 
     answerKeys: [
+
         {
-            title: "Latest Answer Key",
-            organization: "Government Department",
+            title: "UPPSC Latest Answer Key",
+            organization: "Uttar Pradesh Public Service Commission",
             date: "06 September 2026",
-            link: "#"
+            link: "https://uppsc.up.nic.in/",
+            button: "View Answer Key"
+        },
+
+        {
+            title: "UP Police Latest Answer Key",
+            organization: "UP Police Recruitment & Promotion Board",
+            date: "06 September 2026",
+            link: "https://uppbpb.gov.in/",
+            button: "View Answer Key"
         }
+
     ]
+
 };
