@@ -19,14 +19,6 @@ const updates = {
             button: "Apply Online"
         },
 
- {
-            title: "Rajasthan Safai Karmchari Online Form 2026 (24,752 posts)",
-            organization: "Local Self Government Department, Rajasthan",
-            lastDate: "28 September 2026",
-            link: "https://https://sso.rajasthan.gov.in/signin?encq=6JkTF7D/fPuyiLpqlTuv+tsssIL22cKEce/qYZMZKsM=/",
-            button: "Apply Online"
-        },
-        
         {
             title: "UPPSC Miscellaneous Examination 2026 - A-3/E-1/2026",
             organization: "Uttar Pradesh Public Service Commission",
@@ -114,3 +106,10 @@ const updates = {
     ]
 
 };
+```
+
+**ध्यान दें:** मैंने जानबूझकर ऐसे direct URLs नहीं बनाए जो verify नहीं हुए हैं। UPPSC की official notification page पर ये applications और उनकी dates verified हैं। UP Police की official site पर current Home Guard/Police notices verified हैं।
+
+अब अगला काम आपकी **`index.html` को इस `data.js` से connect करना** है। अभी आपकी HTML में SSC/Railway/Police के cards manually लिखे हुए हैं। उन्हें हटाकर JavaScript से automatic cards बनवाएँगे।
+
+इससे आगे आपको सिर्फ `data.js` में नया item जोड़ना पड़ेगा—**`index.html` बार-बार edit नहीं करना पड़ेगा।**
