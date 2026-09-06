@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latest Results - Sarkari Adda</title>
+
+  <title>Latest Results 2026 - IN Sarkari Adda</title>
+
+  <meta name="description"
+        content="IN Sarkari Adda पर SSC, Railway, UPSC और अन्य सरकारी परीक्षाओं के Latest Results और Official Result Links देखें।">
+
+  <meta name="keywords"
+        content="Sarkari Result 2026, SSC Result, Railway Result, UPSC Result, Government Exam Result">
 
   <style>
     * {
@@ -15,8 +22,10 @@
       font-family: Arial, sans-serif;
       background: #f2f4f7;
       color: #222;
+      line-height: 1.6;
     }
 
+    /* HEADER */
     header {
       background: #14213d;
       color: white;
@@ -26,16 +35,18 @@
 
     header h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 32px;
     }
 
     header p {
       margin: 8px 0 0;
+      font-size: 17px;
     }
 
+    /* NAVIGATION */
     nav {
       background: #fca311;
-      padding: 12px;
+      padding: 13px 10px;
       text-align: center;
     }
 
@@ -43,28 +54,47 @@
       color: #111;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 10px;
+      margin: 0 12px;
+      display: inline-block;
     }
 
+    nav a:hover {
+      color: #9b2226;
+    }
+
+    /* CONTAINER */
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px 15px;
     }
 
-    .title {
-      background: #14213d;
-      color: white;
+    /* NOTICE */
+    .notice {
+      background: #fff3cd;
+      border-left: 5px solid #fca311;
       padding: 14px;
-      border-radius: 6px;
-      font-size: 22px;
+      margin-bottom: 20px;
+      border-radius: 5px;
       font-weight: bold;
     }
 
+    /* TITLE */
+    .title {
+      background: #14213d;
+      color: white;
+      padding: 15px 18px;
+      border-radius: 6px;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* RESULT CARD */
     .result {
       background: white;
-      margin-top: 15px;
-      padding: 18px;
+      margin-bottom: 18px;
+      padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
@@ -72,40 +102,117 @@
     .result h2 {
       margin-top: 0;
       color: #14213d;
-      font-size: 20px;
+      font-size: 22px;
     }
 
     .result p {
       color: #555;
+      margin: 8px 0;
     }
 
+    /* DETAILS */
+    .details {
+      background: #f7f8fa;
+      padding: 12px;
+      margin: 15px 0;
+      border-radius: 5px;
+    }
+
+    .details p {
+      margin: 5px 0;
+    }
+
+    .details strong {
+      color: #14213d;
+    }
+
+    /* STATUS */
+    .status {
+      display: inline-block;
+      background: #e9ecef;
+      color: #343a40;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    /* BUTTONS */
     .btn {
       display: inline-block;
       background: #16803c;
       color: white;
-      padding: 10px 15px;
+      padding: 10px 18px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
       margin-top: 8px;
+      margin-right: 8px;
     }
 
+    .btn:hover {
+      background: #0b6b30;
+    }
+
+    .official {
+      background: #14213d;
+    }
+
+    .official:hover {
+      background: #fca311;
+      color: #111;
+    }
+
+    /* FOOTER */
     footer {
       margin-top: 30px;
       background: #14213d;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 22px 15px;
     }
 
-    @media(max-width:600px) {
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+
       header h1 {
         font-size: 25px;
       }
 
+      header p {
+        font-size: 15px;
+      }
+
       nav a {
-        display: inline-block;
-        margin: 5px;
+        display: block;
+        margin: 8px 0;
+      }
+
+      .container {
+        padding: 12px;
+      }
+
+      .title {
+        font-size: 21px;
+      }
+
+      .result {
+        padding: 16px;
+      }
+
+      .result h2 {
+        font-size: 19px;
+      }
+
+      .btn {
+        display: block;
+        text-align: center;
+        margin-right: 0;
       }
     }
   </style>
@@ -113,45 +220,178 @@
 
 <body>
 
-<header>
-  <h1>🇮🇳 Sarkari Adda</h1>
-  <p>सरकारी परीक्षा के नवीनतम रिजल्ट</p>
-</header>
+  <!-- HEADER -->
+  <header>
+    <h1>🇮🇳 IN Sarkari Adda</h1>
+    <p>सरकारी नौकरी • रिजल्ट • एडमिट कार्ड • आंसर की</p>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="jobs.html">Latest Jobs</a>
-  <a href="results.html">Results</a>
-  <a href="admit-card.html">Admit Card</a>
-  <a href="answer-key.html">Answer Key</a>
-</nav
-<div class="container">
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Latest Jobs</a>
+    <a href="results.html">Results</a>
+    <a href="admit-card.html">Admit Card</a>
+    <a href="answer-key.html">Answer Key</a>
+  </nav>
 
-  <h2>📢 Latest Results</h2>
+  <main class="container">
 
-  <div class="result">
-    <h2>SSC Result 2026</h2>
-    <p>SSC की नवीनतम परीक्षा का रिजल्ट देखें।</p>
-<a class="btn" href="https://ssc.gov.in/">View Result</a>
-  </div>
+    <!-- NOTICE -->
+    <div class="notice">
+      📢 महत्वपूर्ण सूचना: Result देखने से पहले संबंधित विभाग की
+      Official Website पर अपना परीक्षा और result notice जरूर verify करें।
+    </div>
 
-  <div class="result">
-    <h2>Railway Result 2026</h2>
-    <p>रेलवे भर्ती परीक्षा का नवीनतम रिजल्ट देखें।</p>
-    <a class="btn" href="https://www.rrbcdg.gov.in/">View Result</a>
-  </div>
+    <!-- TITLE -->
+    <div class="title">
+      📊 Latest Government Results 2026
+    </div>
 
-  <div class="result">
-    <h2>UPSC Result 2026</h2>
-    <p>UPSC परीक्षा का नवीनतम रिजल्ट देखें।</p>
-    <a class="btn" href="https://www.upsc.gov.in/exams-related-info/written-result">View Result</a>
-  </div>
 
-</div>
+    <!-- SSC -->
+    <article class="result">
 
-<footer>
-  <p>© 2026 Sarkari Adda | सरकारी नौकरी की जानकारी</p>
-</footer>
+      <span class="status">
+        Check Official Portal
+      </span>
+
+      <h2>SSC Result 2026</h2>
+
+      <p>
+        Staff Selection Commission की विभिन्न परीक्षाओं के नवीनतम
+        परिणाम और result notices यहां देखें।
+      </p>
+
+      <div class="details">
+        <p><strong>Organization:</strong> Staff Selection Commission (SSC)</p>
+        <p><strong>Category:</strong> Government Examination Result</p>
+        <p><strong>Status:</strong> Exam के अनुसार अलग-अलग</p>
+      </div>
+
+      <a class="btn"
+         href="https://ssc.gov.in/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Check Result
+      </a>
+
+      <a class="btn official"
+         href="https://ssc.gov.in/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Official Website
+      </a>
+
+    </article>
+
+
+    <!-- RAILWAY -->
+    <article class="result">
+
+      <span class="status">
+        Check Official Portal
+      </span>
+
+      <h2>Railway Result 2026</h2>
+
+      <p>
+        Railway Recruitment Board की विभिन्न परीक्षाओं के result,
+        merit list और अन्य official updates देखें।
+      </p>
+
+      <div class="details">
+        <p><strong>Organization:</strong> Railway Recruitment Board (RRB)</p>
+        <p><strong>Category:</strong> Railway Examination Result</p>
+        <p><strong>Status:</strong> Exam के अनुसार अलग-अलग</p>
+      </div>
+
+      <a class="btn"
+         href="https://www.rrbcdg.gov.in/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Check Result
+      </a>
+
+      <a class="btn official"
+         href="https://www.rrbapply.gov.in/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Official Website
+      </a>
+
+    </article>
+
+
+    <!-- UPSC -->
+    <article class="result">
+
+      <span class="status">
+        Check Official Portal
+      </span>
+
+      <h2>UPSC Result 2026</h2>
+
+      <p>
+        Union Public Service Commission की विभिन्न परीक्षाओं के
+        written result और अन्य official result updates देखें।
+      </p>
+
+      <div class="details">
+        <p><strong>Organization:</strong> Union Public Service Commission (UPSC)</p>
+        <p><strong>Category:</strong> UPSC Examination Result</p>
+        <p><strong>Status:</strong> Exam के अनुसार अलग-अलग</p>
+      </div>
+
+      <a class="btn"
+         href="https://www.upsc.gov.in/exams-related-info/written-result"
+         target="_blank"
+         rel="noopener noreferrer">
+        Check Result
+      </a>
+
+      <a class="btn official"
+         href="https://www.upsc.gov.in/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Official Website
+      </a>
+
+    </article>
+
+
+    <!-- IMPORTANT INFORMATION -->
+    <article class="result">
+
+      <h2>📌 Result देखने से पहले जरूरी बातें</h2>
+
+      <p>
+        ✔ अपना Roll Number / Registration Number तैयार रखें।
+      </p>
+
+      <p>
+        ✔ केवल संबंधित विभाग की Official Website से Result देखें।
+      </p>
+
+      <p>
+        ✔ Result PDF और Score Card अलग-अलग हो सकते हैं।
+      </p>
+
+      <p>
+        ✔ अगले चरण की जानकारी जैसे Document Verification या Interview
+        के लिए official notice जरूर देखें।
+      </p>
+
+    </article>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 IN Sarkari Adda | सभी अधिकार सुरक्षित</p>
+    <p>Latest Jobs • Results • Admit Card • Answer Key</p>
+  </footer>
 
 </body>
 </html>
